@@ -6,9 +6,10 @@ const User = SQLconnection.define("User", {
         type : DataTypes.STRING,
         unique : true,
         allowNull : false,
-        validate: {
-            isEmail : true
-        }
+        // validate: {
+        //     isEmail : true
+        // }
+        // taken out so user can enter phone nmber, username etc
     },
     password : {
         type : DataTypes.STRING,
